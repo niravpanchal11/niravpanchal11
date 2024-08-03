@@ -5,7 +5,8 @@ My Name is Nirav Panchal.
 This is my Personal Website-Portfolio.
 
 
-## Contribute
+## Contact
 
-* Clone the repository.
-* Explore the projects.
+niravpanchal9980@gmail.com
+
++91 9157159663
