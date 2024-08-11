@@ -1,6 +1,13 @@
 ## Hey there 👋, I'm [Nirav Panchal!](https://github.com/niravpanchal11)
 <a href='https://www.linkedin.com/in/niravpanchal11/'><img align='left' alt="linkedin" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/linkedin.svg" height='18px'/></a>
 <a href='https://twitter.com/niravpanchal_11/'><img align='left' alt="twitter" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/twitter.svg" height='18px'/></a>
+<a href='https://www.youtube.com/@niravpanchal11'><img align='left' alt="youtube" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/youtube.svg" height='18px'/></a>
+<a href='https://leetcode.com/u/niravpanchal/'><img align='left' alt="twitter" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/leetcode.svg" height='18px'/></a>
+<a href='https://www.geeksforgeeks.org/user/niravpanchal11/'><img align='left' alt="geeksforgeeks" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/geeks-for-geeks.svg" height='18px'/></a>
+<a href='https://codeforces.com/profile/Nirav_11/'><img align='left' alt="codeforces" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/codeforces.svg" height='18px'/></a>
+<a href='https://www.hackerrank.com/profile/niravpanchal11/'><img align='left' alt="hackerrank" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/hackerrannk.svg" height='18px'/></a>
+<a href='https://www.codechef.com/users/nirav_11'><img align='left' alt="codechef" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/codechef.svg" height='18px'/></a>
+<a href='https://www.hackerearth.com/@niravpanchal9980'><img align='left' alt="hackerearth" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/hackerearth.svg" height='18px'/></a>
 
 <br/>
 
