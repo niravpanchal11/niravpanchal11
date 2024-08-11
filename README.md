@@ -2,6 +2,7 @@
 <a href='https://www.linkedin.com/in/niravpanchal11/'><img align='left' alt="linkedin" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/linkedin.svg" height='18px'/></a>
 <a href='https://twitter.com/niravpanchal_11/'><img align='left' alt="twitter" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/twitter.svg" height='18px'/></a>
 
+<br/>
 
 ### 🔨 Languages and Tools: 
 <a href="https://www.python.org" target="_blank"><img align="left" alt="Python" height ="42px" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/Software-Development/Programming-Language/python.svg"></a>
