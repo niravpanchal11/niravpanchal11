@@ -5,7 +5,7 @@
 <a href='https://leetcode.com/u/niravpanchal/'><img align='left' alt="twitter" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/leetcode.svg" height='18px'/></a>
 <a href='https://www.geeksforgeeks.org/user/niravpanchal11/'><img align='left' alt="geeksforgeeks" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/geeks-for-geeks.svg" height='18px'/></a>
 <a href='https://codeforces.com/profile/Nirav_11/'><img align='left' alt="codeforces" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/codeforces.svg" height='18px'/></a>
-<a href='https://www.hackerrank.com/profile/niravpanchal11/'><img align='left' alt="hackerrank" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/hackerrannk.svg" height='18px'/></a>
+<a href='https://www.hackerrank.com/profile/niravpanchal11/'><img align='left' alt="hackerrank" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/hackerrank.svg" height='18px'/></a>
 <a href='https://www.codechef.com/users/nirav_11'><img align='left' alt="codechef" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/codechef.svg" height='18px'/></a>
 <a href='https://www.hackerearth.com/@niravpanchal9980'><img align='left' alt="hackerearth" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/hackerearth.svg" height='18px'/></a>
 
