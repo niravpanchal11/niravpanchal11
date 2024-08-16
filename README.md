@@ -25,5 +25,13 @@
 <a href="https://spring.io/projects/spring-framework/" target="_blank"><img align="left" alt="Spring" height ="42px" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/Software-Development/Backend/spring.svg"></a>
 <a href="https://spring.io/projects/spring-boot/" target="_blank"><img align="left" alt="SpringBoot" height ="42px" src="/image/icons/Software-Development/Backend/springboot.png"></a>
 <a href="https://aws.amazon.com/" target="_blank"><img align="left" alt="AWS" height ="42px" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/Software-Development/DevOps/aws.svg"></a>
-<a href="https://git-scm.com/" target="_blank"><img src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/Software-Development/Tools/git.svg" align="left" alt="git" height='42px'/> </a>
+<a href="https://git-scm.com/" target="_blank"><img src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/Software-Development/Tools/git.svg" align="left" alt="git" height='42px'/></a>
 <!-- <a href="https://www.figma.com/" target="_blank"> <img src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/Software-Development/Tools/figma.svg" alt="figma" height='42px'/></a> -->
+
+<br/>
+
+### 📊 Github Stats
+![Nirav's Github Stats](https://github-readme-stats.vercel.app/api?username=niravpanchal11&count_private=true&show_icons=true&include_all_commits=true)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=niravpanchal11&hide=TeX&layout=compact)
+
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=niravpanchal11.niravpanchal11)
