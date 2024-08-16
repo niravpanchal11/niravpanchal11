@@ -1,4 +1,4 @@
-## Hey there 👋, I'm [Nirav Panchal!](https://github.com/niravpanchal11)
+### Hey there 👋, I'm [Nirav Panchal!](https://github.com/niravpanchal11)
 <a href='https://www.linkedin.com/in/niravpanchal11/'><img align='left' alt="linkedin" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/linkedin.svg" height='18px'/></a>
 <a href='https://twitter.com/niravpanchal_11/'><img align='left' alt="twitter" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/twitter.svg" height='18px'/></a>
 <a href='https://www.youtube.com/@niravpanchal11'><img align='left' alt="youtube" src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/social/youtube.svg" height='18px'/></a>
@@ -28,6 +28,8 @@
 <a href="https://git-scm.com/" target="_blank"><img src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/Software-Development/Tools/git.svg" align="left" alt="git" height='42px'/></a>
 <!-- <a href="https://www.figma.com/" target="_blank"> <img src="https://raw.githubusercontent.com/niravpanchal11/niravpanchal11/master/image/icons/Software-Development/Tools/figma.svg" alt="figma" height='42px'/></a> -->
 
+<br/>
+<br/>
 <br/>
 
 ### 📊 Github Stats
