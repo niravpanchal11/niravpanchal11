@@ -38,3 +38,5 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=niravpanchal11&hide=TeX&layout=compact)
 
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=niravpanchal11.niravpanchal11)
+
+- Contact me: niravpanchal9980@gmail.com
