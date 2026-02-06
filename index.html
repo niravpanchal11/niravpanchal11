@@ -6,104 +6,488 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link href="./css/style.css" rel="stylesheet">
 
-
-    <title>Nirav Panchal</title>
+    <title>Nirav Panchal | Full Stack Software Engineer</title>
   </head>
-  <body>    
+  <body>
 
-
-
-    <section class="home">
-
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand active" href="index.html">My <span style="color:red;"> Portfolio </span> </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">Know me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Work Experience</a>
-            </li>    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home"><i class="bi bi-code-slash"></i> Nirav <span class="text-danger">Panchal</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="#">Education</a>
-            </li>    
+              <a class="nav-link active" href="#home"><i class="bi bi-house-door"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i class="bi bi-person"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience"><i class="bi bi-briefcase"></i> Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"><i class="bi bi-terminal"></i> Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"><i class="bi bi-folder-check"></i> Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><i class="bi bi-envelope"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Skills
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">C/C++</a></li>
-                  <li><a class="dropdown-item" href="#">Java</a></li>
-                  <li><a class="dropdown-item" href="#">Python</a></li>
-                  <!--                      
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">/a></li>
-                    -->
-                </ul>
-                <li class="nav-item">
-                    <a class="nav-link" href="project.html">Projects</a>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Courses & Certifications</a>
-                </li>    
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Responsibilites/Awards/Achivements</a>
-                </li>    
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Me</a>
-                </li>    
-              </li>
-            </ul>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="animate-fade-in">
+              <h1 class="display-2 fw-bold mb-3 hero-name">Nirav Panchal</h1>
+              
+              <!-- Animated role text -->
+              <div class="role-animator mb-4">
+                <h2 class="fs-3 fw-bold mb-2">
+                  <span class="job-title">Backend Developer</span>
+                  <span class="job-title">DevOps Engineer</span>
+                  <span class="job-title">AI/ML Engineer</span>
+                  <span class="cursor">|</span>
+                </h2>
+                <p class="text-secondary-gray" style="font-size: 0.95rem; font-weight: 500;">
+                  <i class="bi bi-lightning-charge"></i> Enterprise Applications • DevOps • AI/ML
+                </p>
+              </div>
+              
+              <p class="lead-custom mb-4">
+                I design and deliver scalable, production-grade systems that solve complex business problems. 
+                My work focuses on cloud-native architectures, high-performance backends, and intuitive user experiences that drive measurable outcomes.
+              </p>
+              <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#projects" class="btn btn-danger btn-lg px-5 hero-btn"><i class="bi bi-arrow-right"></i> View My Work</a>
+                <a href="#contact" class="btn btn-outline-danger btn-lg px-5 hero-btn"><i class="bi bi-download"></i> Download Resume</a>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-
-
-
-      <div class="intro">
-        <h1 class="name">Nirav Panchal</h1>
-        <h3 style="font-weight: 300;" >Software Engineer</h3>
-        <br>
-
-        <p>
-          Hi. Welcome to my personal web page. Thank you for landing here. If you explore this website
-          you will get to know about me, What I have done in the past, What I'm currently do and my future plans. 
-          If you are intersted to know more about me Go to the know me page.
-          In case you want to contact me for any reason. I've added contact details in the contact page.
-          <br>
-          <b>Thank you.</b>
-        </p>
-
-        <br>
-
-        <button type="button" class="btn btn-info btn-lg">Explore</button>
       </div>
     </section>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-section-light">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold mb-2"><i class="bi bi-person-badge"></i> About Me</h2>
+          <p class="lead text-muted">Professional Background & Core Expertise</p>
+        </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+        <div class="row align-items-center g-5">
+          <div class="col-lg-4 text-center">
+            <img src="./image/linkedin_profile_image.png" class="img-fluid rounded-circle shadow-lg profile-border" style="width: 280px; height: 280px; object-fit: cover;" alt="Nirav Panchal">
+          </div>
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-lg">
+              <div class="card-body p-4">
+                <h3 class="card-title fs-4 fw-bold mb-2">Software Engineer</h3>
+                <p class="text-danger fw-bold mb-3" style="font-size: 1rem;">Tata Consultancy Services (TCS)</p>
+                
+                <p class="mb-4 text-secondary-gray" style="line-height: 1.8; font-size: 1.05rem;">
+                  I am a committed software professional with extensive expertise in designing and implementing enterprise-grade solutions. 
+                  My specialization encompasses full-stack development, microservices architecture, and cloud-native applications.
+                </p>
+
+                <div class="highlights mb-4">
+                  <h5 class="fw-bold mb-3 text-primary-dark">Core Competencies:</h5>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> <strong>Backend Development:</strong> Python (Django & FastAPI & Flask), Java (SpringBoot)</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> <strong>Frontend Technologies:</strong> React</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> <strong>Database Management:</strong> SQL, NoSQL, Cloud DBs</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> <strong>Cloud Platforms:</strong> AWS, Azure</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> <strong>DevOps & CI/CD:</strong> Terraform, Docker, Kubernetes</li>
+                        <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> <strong>System Architecture:</strong> Scalability & Performance</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <a href="resume.pdf" class="btn btn-danger btn-lg w-100"><i class="bi bi-download"></i> Download Resume</a>
+                  </div>
+                  <div class="col-md-6">
+                    <a href="#contact" class="btn btn-outline-danger btn-lg w-100"><i class="bi bi-chat-dots"></i> Get in Touch</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-5 bg-section-white">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold mb-2"><i class="bi bi-briefcase"></i> Professional Experience</h2>
+          <p class="lead text-muted">Career Progression & Academic Foundation</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <!-- Current Role -->
+            <div class="card border-0 shadow-lg mb-4 experience-card">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div>
+                    <h4 class="fw-bold mb-1">
+                      <i class="bi bi-building text-danger me-2"></i> Tata Consultancy Services
+                    </h4>
+                    <p class="text-muted mb-0" style="font-size: 1rem;">Software Engineer</p>
+                  </div>
+                  <span class="badge bg-danger fs-6">Current Position</span>
+                </div>
+                <p class="text-muted mb-3"><i class="bi bi-calendar-event me-2"></i> 2021 - Present</p>
+                <p class="mb-3 text-secondary-gray" style="line-height: 1.8;">
+                  Lead development initiatives on enterprise applications serving Fortune 500 clients. 
+                  Architect scalable microservices, optimize system performance, and mentor junior developers on best practices.
+                </p>
+                <div>
+                  <strong class="d-block mb-2 text-primary-dark">Key Achievements:</strong>
+                  <ul class="mb-0 text-secondary-gray" style="line-height: 1.8;">
+                    <li>Designed and deployed cloud-native applications reducing operational costs by 35%</li>
+                    <li>Implemented CI/CD pipelines improving deployment efficiency by 50%</li>
+                    <li>Led cross-functional team of 8 developers on critical client project</li>
+                    <li>Enhanced application performance by optimizing database queries and caching strategies</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div class="card border-0 shadow-lg experience-card">
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-4"><i class="bi bi-mortarboard text-danger me-2"></i> Education</h4>
+                
+                <div class="mb-4 pb-4 border-bottom">
+                  <h5 class="fw-bold mb-1 text-primary-dark">Bachelor of Technology in Information Technology</h5>
+                  <p class="text-danger mb-2 fw-bold">L.D. College of Engineering (LDCE), Ahmedabad</p>
+                  <p class="text-muted mb-2"><i class="bi bi-calendar-event me-2"></i> 2017 - 2021</p>
+                  <p class="mb-0 text-secondary-gray" style="line-height: 1.7;">
+                    Graduated with distinction, maintaining strong academic performance throughout coursework in 
+                    Data Structures, Algorithms, Database Management, and Software Engineering principles.
+                  </p>
+                </div>
+
+                <div>
+                  <h5 class="fw-bold mb-2 text-primary-dark">Technical Foundation</h5>
+                  <ul class="mb-0 text-secondary-gray" style="line-height: 1.8;">
+                    <li>Advanced understanding of computer science fundamentals and algorithm optimization</li>
+                    <li>Hands-on experience with enterprise development methodologies and frameworks</li>
+                    <li>Participated in multiple hackathons and technical competitions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-section-light">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold mb-2"><i class="bi bi-terminal"></i> Technical Skills</h2>
+          <p class="lead text-muted">Expertise & Professional Proficiencies</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon mb-3">
+                <img src="./image/icons/Software-Development/Backend/springboot.png" alt="Spring Boot" class="skill-img" style="max-height: 60px;">
+              </div>
+              <h4 class="fw-bold mb-3 text-primary-dark">Backend Development</h4>
+              <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Python (Django & FastAPI & Flask)</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Java (SpringBoot)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon mb-3">
+                <img src="./image/icons/Software-Development/Frontend/reactjs.svg" alt="React" class="skill-img" style="max-height: 60px;">
+              </div>
+              <h4 class="fw-bold mb-3 text-primary-dark">Frontend Development</h4>
+              <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> React & JavaScript</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Bootstrap & Tailwind CSS & jQuery</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> HTML5 & CSS3</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon mb-3">
+                <img src="./image/icons/Software-Development/Database/postgresql.svg" alt="PostgreSQL" class="skill-img" style="max-height: 60px;">
+              </div>
+              <h4 class="fw-bold mb-3 text-primary-dark">Database Management</h4>
+              <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> SQL (PostgreSQL, MySQL)</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> NoSQL (MongoDB, DynamoDB)</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Database Optimization</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Query Performance Tuning</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon mb-3">
+                <img src="./image/icons/Software-Development/DevOps/aws.svg" alt="AWS" class="skill-img" style="max-height: 60px;">
+              </div>
+              <h4 class="fw-bold mb-3 text-primary-dark">Cloud & DevOps</h4>
+              <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> AWS & Azure</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Docker & Kubernetes</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Infrastructure as Code (CloudFormation, Terraform)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon mb-3">
+                <img src="./image/icons/Software-Development/Tools/git.svg" alt="Git" class="skill-img" style="max-height: 60px;">
+              </div>
+              <h4 class="fw-bold mb-3 text-primary-dark">Tools & Frameworks</h4>
+              <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Microservices Architecture</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> System Design Patterns</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon mb-3">
+                <img src="./image/icons/Software-Development/Tools/figma.svg" alt="Professional Competencies" class="skill-img" style="max-height: 60px;">
+              </div>
+              <h4 class="fw-bold mb-3 text-primary-dark">Professional Competencies</h4>
+              <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Problem Solving</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Team Leadership</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Project Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-section-white">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold mb-2"><i class="bi bi-folder-check"></i> Featured Projects</h2>
+          <p class="lead text-muted">Showcasing Technical Excellence & Innovation</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card border-0 shadow-lg h-100 overflow-hidden project-card">
+              <img src="./image/workanalytics.jpg" class="card-img-top" style="height: 220px; object-fit: cover;" alt="Work Analytics">
+              <div class="card-body d-flex flex-column p-4">
+                <h5 class="card-title fw-bold mb-2"><i class="bi bi-bar-chart text-danger me-2"></i>Work Analytics Platform</h5>
+                <p class="text-muted small mb-3" style="font-size: 0.9rem;">Enterprise Employee Performance Management System</p>
+                <p class="card-text flex-grow-1 mb-3 text-secondary-gray" style="font-size: 0.95rem; line-height: 1.8;">
+                  Engineered a comprehensive analytics platform leveraging Deep Learning and IoT technology to monitor employee productivity metrics in real-time. 
+                  The system provides actionable insights for organizational efficiency optimization across multiple departments.
+                </p>
+                <div>
+                  <p class="small mb-3 text-secondary-gray"><strong>Tech Stack:</strong> Python, TensorFlow, React, PostgreSQL, AWS</p>
+                  <a href="https://github.com/niravpanchal11/WorkAnalytics" class="btn btn-danger btn-sm" target="_blank">
+                    <i class="bi bi-github me-2"></i> View Repository
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card border-0 shadow-lg h-100 overflow-hidden project-card">
+              <img src="./image/employeeadministrationsystem.png" class="card-img-top" style="height: 220px; object-fit: cover;" alt="Employee Administration System">
+              <div class="card-body d-flex flex-column p-4">
+                <h5 class="card-title fw-bold mb-2"><i class="bi bi-person-check text-danger me-2"></i>Employee Management Suite</h5>
+                <p class="text-muted small mb-3" style="font-size: 0.9rem;">Integrated Human Resources & Operations Platform</p>
+                <p class="card-text flex-grow-1 mb-3 text-secondary-gray" style="font-size: 0.95rem; line-height: 1.8;">
+                  Developed an enterprise-grade HR management system designed to streamline employee records, attendance tracking, 
+                  performance evaluations, and payroll processing. Features advanced reporting and compliance management capabilities.
+                </p>
+                <div>
+                  <p class="small mb-3 text-secondary-gray"><strong>Tech Stack:</strong> Java, SpringBoot, Angular, MySQL, Docker</p>
+                  <a href="https://github.com" class="btn btn-danger btn-sm" target="_blank">
+                    <i class="bi bi-github me-2"></i> View Repository
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <p class="text-muted mb-3" style="font-size: 1.05rem;">Interested in collaborating? Let's discuss your project requirements.</p>
+            <a href="#contact" class="btn btn-danger btn-lg"><i class="bi bi-arrow-right"></i> Start a Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-section-light">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold mb-2"><i class="bi bi-envelope"></i> Let's Connect</h2>
+          <p class="lead text-muted">I'd love to hear about your project and discuss opportunities for collaboration</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-lg h-100">
+              <div class="card-body p-4">
+                <h4 class="card-title fw-bold mb-4"><i class="bi bi-chat-dots text-danger me-2"></i>Send a Message</h4>
+                <form id="contactForm">
+                  <div class="form-group">
+                    <label for="nameInput" class="form-label">Full Name</label>
+                    <input type="text" class="form-control form-control-lg" id="nameInput" name="name" placeholder="Your Full Name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="emailInput" class="form-label">Professional Email</label>
+                    <input type="email" class="form-control form-control-lg" id="emailInput" name="email" placeholder="your.email@company.com" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="subjectInput" class="form-label">Subject</label>
+                    <input type="text" class="form-control form-control-lg" id="subjectInput" name="subject" placeholder="Project Inquiry / Collaboration" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="messageInput" class="form-label">Message</label>
+                    <textarea class="form-control form-control-lg" id="messageInput" name="message" rows="6" placeholder="Please describe your project requirements..." required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-danger btn-lg w-100"><i class="bi bi-send me-2"></i> Send Message</button>
+                </form>
+                <div id="submitMessage" class="alert mt-4 d-none" role="alert"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-lg h-100">
+              <div class="card-body p-4">
+                <h4 class="card-title fw-bold mb-4"><i class="bi bi-telephone text-danger me-2"></i>Connect Via</h4>
+                <div class="d-flex flex-column gap-3">
+                  <a href="https://www.linkedin.com/in/niravpanchal11" target="_blank" class="btn btn-outline-danger btn-lg text-start p-3" style="justify-content: flex-start;">
+                    <i class="bi bi-linkedin me-3 fs-5"></i>
+                    <div class="text-start">
+                      <strong>LinkedIn</strong>
+                      <p class="small text-muted mb-0">linkedin.com/in/niravpanchal11</p>
+                    </div>
+                  </a>
+                  <a href="https://github.com/niravpanchal11" target="_blank" class="btn btn-outline-danger btn-lg text-start p-3" style="justify-content: flex-start;">
+                    <i class="bi bi-github me-3 fs-5"></i>
+                    <div class="text-start">
+                      <strong>GitHub</strong>
+                      <p class="small text-muted mb-0">github.com/niravpanchal11</p>
+                    </div>
+                  </a>
+                  <a href="https://www.instagram.com/niravpanchal.11" target="_blank" class="btn btn-outline-danger btn-lg text-start p-3" style="justify-content: flex-start;">
+                    <i class="bi bi-instagram me-3 fs-5"></i>
+                    <div class="text-start">
+                      <strong>Instagram</strong>
+                      <p class="small text-muted mb-0">@niravpanchal.11</p>
+                    </div>
+                  </a>
+                  <a href="mailto:niravpanchal9980@gmail.com" class="btn btn-outline-danger btn-lg text-start p-3" style="justify-content: flex-start;">
+                    <i class="bi bi-envelope-at me-3 fs-5"></i>
+                    <div class="text-start">
+                      <strong>Email</strong>
+                      <p class="small text-muted mb-0">niravpanchal9980@gmail.com</p>
+                    </div>
+                  </a>
+                  <a href="https://wa.me/919157159663?text=Hi%20Nirav%2C%20I'd%20like%20to%20discuss%20a%20project%20with%20you" target="_blank" class="btn btn-outline-danger btn-lg text-start p-3" style="justify-content: flex-start;">
+                    <i class="bi bi-whatsapp me-3 fs-5"></i>
+                    <div class="text-start">
+                      <strong>WhatsApp</strong>
+                      <p class="small text-muted mb-0">+91 9157159663</p>
+                    </div>
+                  </a>
+                  <div class="btn btn-outline-danger btn-lg text-start p-3" disabled>
+                    <i class="bi bi-telephone me-3 fs-5"></i>
+                    <div class="text-start">
+                      <strong>Phone</strong>
+                      <p class="small text-muted mb-0">+91 9157159663</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4 pt-4 border-top">
+                  <h5 class="fw-bold mb-3 text-primary-dark">Availability</h5>
+                  <p class="mb-2 text-secondary-gray"><i class="bi bi-check-circle text-success me-2"></i> <strong>Open to Opportunities</strong></p>
+                  <p class="mb-2 text-secondary-gray"><i class="bi bi-check-circle text-success me-2"></i> Available for Consulting</p>
+                  <p class="mb-0 text-secondary-gray"><i class="bi bi-check-circle text-success me-2"></i> Freelance Projects Welcomed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row align-items-center g-3">
+          <div class="col-md-6 text-start">
+            <div class="social-links">
+              <a href="https://linkedin.com/in/niravpanchal11" target="_blank" class="text-white me-3" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/niravpanchal11" target="_blank" class="text-white me-3" title="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://instagram.com/niravpanchal.11" target="_blank" class="text-white me-3" title="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="mailto:niravpanchal9980@gmail.com" target="_blank" class="text-white" title="Email">
+                <i class="bi bi-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 text-end">
+            <p class="mb-2">Designed & Developed with <i class="bi bi-heart-fill text-danger"></i> by Nirav Panchal</p>
+            <p class="small text-muted mb-0">&copy; 2026 Nirav Panchal. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
