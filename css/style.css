@@ -23,6 +23,13 @@
   box-sizing: border-box;
 }
 
+/* Make images fluid by default */
+img, .img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -357,8 +364,9 @@ main, section {
   letter-spacing: 2px;
   font-weight: 700;
   color: #1A1A1A;
-  font-size: 1.1rem;
-  min-width: 350px;
+  font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+  min-width: 0;
+  max-width: 100%;
 }
 
 .job-title {
@@ -771,6 +779,58 @@ img.rounded-circle:hover {
   transform: scale(1.05);
 }
 
+/* Profile image: replaces inline sizing used previously */
+.profile-img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: cover;
+  display: inline-block;
+}
+
+/* Project images: consistent height + cover */
+.project-img {
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: cover;
+}
+
+/* Project description utility (replace inline styles) */
+.project-desc {
+  text-align: justify;
+  font-size: 0.95rem;
+}
+
+/* Hero certifications preview badges */
+.hero-certs .cert-badge {
+  background-color: #ffffff;
+  border: 1px solid rgba(0,0,0,0.04);
+  min-width: 0;
+  max-width: 100%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .hero-certs .cert-badge {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-certs .cert-badge {
+    min-width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+/* Hero small subtext utility */
+.hero-sub {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--gray-text);
+}
+
 /* Footer Styling */
 footer {
   background-color: #1a1a1a;
@@ -971,6 +1031,82 @@ footer .copyright {
   .display-5,
   .display-6 {
     font-size: 1.5rem;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Responsive refinements (added): keep theme, improve stacking/spacing
+   - Ensure hero, typed text, profile image and cards scale well
+   - Targets breakpoints <=768px and <=480px
+------------------------------------------------------------------ */
+@media (max-width: 768px) {
+  .profile-img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .typed-text {
+    min-width: 0;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .job-title {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .hero-section {
+    padding: 40px 15px;
+    background-attachment: scroll;
+  }
+
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+  }
+
+  .typed-text {
+    min-width: 0;
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .display-5 {
+    font-size: 1.4rem;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .btn-lg {
+    padding: 8px 18px;
+    font-size: 0.95rem;
+  }
+
+  /* make the role animator wrap nicely */
+  .role-animator h2 {
+    white-space: normal;
   }
 }
 
