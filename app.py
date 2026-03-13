@@ -4,6 +4,8 @@ import uvicorn
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, EmailStr
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -19,6 +21,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Mount static files (CSS, JS, images)
+app.mount("/css", StaticFiles(directory="css"), name="css")
+app.mount("/js", StaticFiles(directory="js"), name="js")
+app.mount("/image", StaticFiles(directory="image"), name="image")
 
 SENDER_EMAIL = os.getenv("SENDER_EMAIL", "your_email@gmail.com")
 SENDER_PASSWORD = os.getenv("SENDER_PASSWORD", "your_app_password")
@@ -208,6 +215,46 @@ async def send_email(request: EmailRequest):
 
 @app.get("/")
 async def root():
+    return FileResponse("index.html", media_type="text/html")
+
+@app.get("/about")
+async def about():
+    return FileResponse("about.html", media_type="text/html")
+
+@app.get("/about.html")
+async def about_html():
+    return FileResponse("about.html", media_type="text/html")
+
+@app.get("/contact")
+async def contact():
+    return FileResponse("contact.html", media_type="text/html")
+
+@app.get("/contact.html")
+async def contact_html():
+    return FileResponse("contact.html", media_type="text/html")
+
+@app.get("/projects")
+async def projects():
+    return FileResponse("project.html", media_type="text/html")
+
+@app.get("/project.html")
+async def project_html():
+    return FileResponse("project.html", media_type="text/html")
+
+@app.get("/experience")
+async def experience():
+    return FileResponse("workexperience.html", media_type="text/html")
+
+@app.get("/workexperience.html")
+async def workexperience_html():
+    return FileResponse("workexperience.html", media_type="text/html")
+
+@app.get("/index.html")
+async def index_html():
+    return FileResponse("index.html", media_type="text/html")
+
+@app.get("/api")
+async def api_status():
     return {"message": "Nirav Panchal's Portfolio API is running!", "endpoints": ["/chat", "/send-email"]}
 
 @app.get("/health")
