@@ -15,8 +15,10 @@
     <!-- Site CSS (preload to reduce render-blocking) -->
     <link rel="preload" href="./css/style.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link href="./css/style.css" rel="stylesheet"></noscript>
+    <!-- Chatbot CSS -->
+    <link href="./css/chatbot.css" rel="stylesheet">
 
-    <title>Nirav Panchal | Full Stack Software Engineer</title>
+    <title>Nirav Panchal | Backend | DevOps | Data | AI/ML Engineer</title>
   </head>
   <body>
 
@@ -40,6 +42,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills"><i class="bi bi-terminal"></i> Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#competitive-programming"><i class="bi bi-trophy"></i> Coding</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects"><i class="bi bi-folder-check"></i> Projects</a>
@@ -68,17 +73,18 @@
                 <h2 class="fs-3 fw-bold mb-2">
                   <span class="job-title">Backend Developer</span>
                   <span class="job-title">DevOps Engineer</span>
+                  <span class="job-title">Data Engineer</span>
                   <span class="job-title">AI/ML Engineer</span>
                   <span class="cursor">|</span>
                 </h2>
                 <p class="text-secondary-gray hero-sub">
-                  <i class="bi bi-lightning-charge"></i> Enterprise Applications • DevOps • AI/ML
+                  <i class="bi bi-lightning-charge"></i> Backend • DevOps • Data Engineering • AI/ML
                 </p>
               </div>
               
               <p class="lead-custom mb-4">
-                I design and deliver scalable, production-grade systems that solve complex business problems. 
-                My work focuses on cloud-native architectures, high-performance backends, and intuitive user experiences that drive measurable outcomes.
+                I design and deliver scalable backend systems, cloud infrastructure, data pipelines, and AI/ML solutions. 
+                My work focuses on building robust microservices, automating deployments, processing big data, and developing intelligent systems that drive business value.
               </p>
               <div class="d-flex gap-3 justify-content-center flex-wrap">
                 <a href="#projects" class="btn btn-danger btn-lg px-5 hero-btn"><i class="bi bi-arrow-right"></i> View My Work</a>
@@ -234,8 +240,8 @@
               </div>
               <h4 class="fw-bold mb-3 text-primary-dark">Backend Development</h4>
               <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Python (Django & FastAPI & Flask)</li>
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Java (SpringBoot)</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Python (Django, Flask, FastAPI)</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Java (Spring Boot)</li>
               </ul>
             </div>
           </div>
@@ -243,13 +249,14 @@
           <div class="col-md-6 col-lg-4">
             <div class="skill-card">
               <div class="skill-icon mb-3">
-                <img src="./image/icons/Software-Development/Frontend/reactjs.svg" alt="React" class="skill-img" style="max-height: 60px;">
+                <img src="./image/icons/Software-Development/DevOps/docker.svg" alt="DevOps" class="skill-img" style="max-height: 60px;">
               </div>
-              <h4 class="fw-bold mb-3 text-primary-dark">Frontend Development</h4>
+              <h4 class="fw-bold mb-3 text-primary-dark">DevOps Engineering</h4>
               <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> React & JavaScript</li>
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Bootstrap & Tailwind CSS & jQuery</li>
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> HTML5 & CSS3</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Docker & Kubernetes</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> AWS & Azure Cloud</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> CI/CD (Jenkins, ArgoCD)</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> AWS CloudFormation & Terraform</li>
               </ul>
             </div>
           </div>
@@ -257,14 +264,44 @@
           <div class="col-md-6 col-lg-4">
             <div class="skill-card">
               <div class="skill-icon mb-3">
-                <img src="./image/icons/Software-Development/Database/postgresql.svg" alt="PostgreSQL" class="skill-img" style="max-height: 60px;">
+                <img src="./image/icons/Software-Development/Data-Science/pytorch.svg" alt="AI/ML" class="skill-img" style="max-height: 60px;">
+              </div>
+              <h4 class="fw-bold mb-3 text-primary-dark">AI/ML Engineering</h4>
+              <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> TensorFlow & PyTorch</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Scikit-learn & Pandas</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> NLP & Computer Vision</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Model Training & Deployment</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Deep Learning</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon mb-3">
+                <img src="./image/icons/Software-Development/Database/postgresql.svg" alt="Data Engineering" class="skill-img" style="max-height: 60px;">
+              </div>
+              <h4 class="fw-bold mb-3 text-primary-dark">Data Engineering</h4>
+              <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Apache Spark - PySpark & Databricks</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Airflow & ETL Pipelines</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="skill-card">
+              <div class="skill-icon mb-3">
+                <img src="./image/icons/Software-Development/Database/mongodb.svg" alt="Databases" class="skill-img" style="max-height: 60px;">
               </div>
               <h4 class="fw-bold mb-3 text-primary-dark">Database Management</h4>
               <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
                 <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> SQL (PostgreSQL, MySQL)</li>
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> NoSQL (MongoDB, DynamoDB)</li>
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Database Optimization</li>
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Query Performance Tuning</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> NoSQL (MongoDB, Redis)</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> DynamoDB</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Elasticsearch</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Query Optimization</li>
               </ul>
             </div>
           </div>
@@ -272,40 +309,13 @@
           <div class="col-md-6 col-lg-4">
             <div class="skill-card">
               <div class="skill-icon mb-3">
-                <img src="./image/icons/Software-Development/DevOps/aws.svg" alt="AWS" class="skill-img" style="max-height: 60px;">
+                <img src="./image/icons/Software-Development/Programming-Language/python.svg" alt="Languages" class="skill-img" style="max-height: 60px;">
               </div>
-              <h4 class="fw-bold mb-3 text-primary-dark">Cloud & DevOps</h4>
+              <h4 class="fw-bold mb-3 text-primary-dark">Programming Languages</h4>
               <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> AWS & Azure</li>
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Docker & Kubernetes</li>
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Infrastructure as Code (CloudFormation, Terraform)</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="skill-card">
-              <div class="skill-icon mb-3">
-                <img src="./image/icons/Software-Development/Tools/git.svg" alt="Git" class="skill-img" style="max-height: 60px;">
-              </div>
-              <h4 class="fw-bold mb-3 text-primary-dark">Tools & Frameworks</h4>
-              <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Microservices Architecture</li>
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> System Design Patterns</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="skill-card">
-              <div class="skill-icon mb-3">
-                <img src="./image/icons/Software-Development/Tools/figma.svg" alt="Professional Competencies" class="skill-img" style="max-height: 60px;">
-              </div>
-              <h4 class="fw-bold mb-3 text-primary-dark">Professional Competencies</h4>
-              <ul class="list-unstyled small text-secondary-gray" style="line-height: 1.8;">
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Problem Solving</li>
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Team Leadership</li>
-                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Project Management</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Python & Java & SQL & PL/SQL</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> JavaScript</li>
+                <li class="mb-2"><i class="bi bi-check-circle text-danger"></i> Bash Scripting</li>
               </ul>
             </div>
           </div>
@@ -313,8 +323,117 @@
       </div>
     </section>
 
+    <!-- Competitive Programming Section -->
+    <section id="competitive-programming" class="py-5 bg-section-white">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="display-5 fw-bold mb-2"><i class="bi bi-trophy"></i> Competitive Programming</h2>
+          <p class="lead text-muted">300+ DSA and Problem Solving Achievements</p>
+        </div>
+
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-10">
+            <div class="card border-0 shadow-lg">
+              <div class="card-body p-4">
+                <h4 class="fw-bold mb-4 text-center text-primary-dark">
+                  <i class="bi bi-code-square text-danger"></i> Problem Solving Statistics
+                </h4>
+                <p class="text-center lead mb-4">
+                  Solved <strong class="text-danger">300+</strong> Data Structures & Algorithms problems across multiple competitive programming platforms
+                </p>
+                
+                <div class="row g-3">
+                  <div class="col-md-6 col-lg-3">
+                    <a href="https://leetcode.com/u/niravpanchal/" target="_blank" class="text-decoration-none">
+                      <div class="card border-0 bg-light h-100 hover-shadow">
+                        <div class="card-body text-center p-3">
+                          <img src="./image/icons/social/leetcode.svg" alt="LeetCode" style="height: 40px;" class="mb-2">
+                          <h6 class="fw-bold mb-1">LeetCode</h6>
+                          <small class="text-muted">Problem Solving</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-lg-3">
+                    <a href="https://auth.geeksforgeeks.org/user/niravpanchal11/" target="_blank" class="text-decoration-none">
+                      <div class="card border-0 bg-light h-100 hover-shadow">
+                        <div class="card-body text-center p-3">
+                          <img src="./image/icons/social/geeks-for-geeks.svg" alt="GeeksForGeeks" style="height: 40px;" class="mb-2">
+                          <h6 class="fw-bold mb-1">GeeksForGeeks</h6>
+                          <small class="text-muted">DSA Practice</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-lg-3">
+                    <a href="https://codeforces.com/profile/Nirav_11" target="_blank" class="text-decoration-none">
+                      <div class="card border-0 bg-light h-100 hover-shadow">
+                        <div class="card-body text-center p-3">
+                          <img src="./image/icons/social/codeforces.svg" alt="CodeForces" style="height: 40px;" class="mb-2">
+                          <h6 class="fw-bold mb-1">CodeForces</h6>
+                          <small class="text-muted">Competitive Coding</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-lg-3">
+                    <a href="https://www.hackerrank.com/profile/niravpanchal11" target="_blank" class="text-decoration-none">
+                      <div class="card border-0 bg-light h-100 hover-shadow">
+                        <div class="card-body text-center p-3">
+                          <img src="./image/icons/social/hackerrank.svg" alt="HackerRank" style="height: 40px;" class="mb-2">
+                          <h6 class="fw-bold mb-1">HackerRank</h6>
+                          <small class="text-muted">Challenges</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-lg-3">
+                    <a href="https://www.codechef.com/users/nirav_11" target="_blank" class="text-decoration-none">
+                      <div class="card border-0 bg-light h-100 hover-shadow">
+                        <div class="card-body text-center p-3">
+                          <img src="./image/icons/social/codechef.svg" alt="CodeChef" style="height: 40px;" class="mb-2">
+                          <h6 class="fw-bold mb-1">CodeChef</h6>
+                          <small class="text-muted">Contests</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6 col-lg-3">
+                    <a href="https://www.hackerearth.com/@niravpanchal9980" target="_blank" class="text-decoration-none">
+                      <div class="card border-0 bg-light h-100 hover-shadow">
+                        <div class="card-body text-center p-3">
+                          <img src="./image/icons/social/hackerearth.svg" alt="HackerEarth" style="height: 40px;" class="mb-2">
+                          <h6 class="fw-bold mb-1">HackerEarth</h6>
+                          <small class="text-muted">Competitions</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="mt-4 p-3 bg-light rounded">
+                  <h6 class="fw-bold mb-2"><i class="bi bi-star-fill text-warning"></i> Key Strengths:</h6>
+                  <ul class="mb-0 small">
+                    <li>Data Structures & Algorithms</li>
+                    <li>Dynamic Programming & Greedy Algorithms</li>
+                    <li>Graph Theory & Tree Traversals</li>
+                    <li>Time & Space Complexity Optimization</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-section-white">
+    <section id="projects" class="py-5 bg-section-light">
       <div class="container">
         <div class="section-header text-center mb-5">
           <h2 class="display-5 fw-bold mb-2"><i class="bi bi-folder-check"></i> Featured Projects</h2>
@@ -384,21 +503,10 @@
           <div class="col-md-6 col-lg-4">
             <div class="card border-0 shadow-lg h-100">
               <div class="card-body">
-                <h5 class="card-title fw-bold">AWS Certified Solutions Architect</h5>
+                <h5 class="card-title fw-bold">AWS Certified Developer – Associate (DVA-C02)</h5>
                 <p class="small text-secondary-gray mb-1">Amazon Web Services</p>
-                <p class="small text-muted mb-2">2023</p>
-                <a href="#" class="btn btn-outline-danger btn-sm" target="_blank" rel="noopener" aria-label="View AWS Solutions Architect credential">View Credential</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-            <div class="card border-0 shadow-lg h-100">
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Docker Certified Associate</h5>
-                <p class="small text-secondary-gray mb-1">Docker</p>
-                <p class="small text-muted mb-2">2021</p>
-                <a href="#" class="btn btn-outline-danger btn-sm" target="_blank" rel="noopener" aria-label="View Docker Certified Associate credential">View Credential</a>
+                <p class="small text-muted mb-2">2026</p>
+                <a href="https://www.credly.com/badges/4d1ac376-cba4-412c-9c3d-c1d64e18d64a/public_url" class="btn btn-outline-danger btn-sm" target="_blank" rel="noopener" aria-label="View AWS Solutions Architect credential">View Credential</a>
               </div>
             </div>
           </div>
@@ -419,7 +527,7 @@
             <div class="card border-0 shadow-lg h-100">
               <div class="card-body p-4">
                 <h4 class="card-title fw-bold mb-4"><i class="bi bi-chat-dots text-danger me-2"></i>Send a Message</h4>
-                <form id="contactForm">
+                <form id="contactForm" onsubmit="return handleFormSubmit(event)">
                   <div class="form-group">
                     <label for="nameInput" class="form-label">Full Name</label>
                     <input type="text" class="form-control form-control-lg" id="nameInput" name="name" placeholder="Your Full Name" required>
@@ -436,9 +544,66 @@
                     <label for="messageInput" class="form-label">Message</label>
                     <textarea class="form-control form-control-lg" id="messageInput" name="message" rows="6" placeholder="Please describe your project requirements..." required></textarea>
                   </div>
-                  <button type="submit" class="btn btn-danger btn-lg w-100"><i class="bi bi-send me-2"></i> Send Message</button>
+                  <button type="submit" class="btn btn-danger btn-lg w-100" id="submitBtn"><i class="bi bi-send me-2"></i> Send Message</button>
                 </form>
                 <div id="submitMessage" class="alert mt-4 d-none" role="alert"></div>
+                
+                <script>
+                  async function handleFormSubmit(event) {
+                    event.preventDefault();
+                    console.log('Form submitted!');
+                    
+                    const formData = {
+                      name: document.getElementById('nameInput').value,
+                      email: document.getElementById('emailInput').value,
+                      subject: document.getElementById('subjectInput').value,
+                      message: document.getElementById('messageInput').value
+                    };
+                    
+                    console.log('Form data:', formData);
+                    
+                    const submitBtn = document.getElementById('submitBtn');
+                    const submitMessage = document.getElementById('submitMessage');
+                    const originalBtnText = submitBtn.innerHTML;
+                    
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i> Sending...';
+                    
+                    try {
+                      console.log('Sending to http://localhost:8000/send-email');
+                      
+                      const response = await fetch('http://localhost:8000/send-email', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(formData)
+                      });
+                      
+                      console.log('Response status:', response.status);
+                      const result = await response.json();
+                      console.log('Response:', result);
+                      
+                      if (result.success) {
+                        submitMessage.className = 'alert alert-success mt-4';
+                        submitMessage.innerHTML = '<i class="bi bi-check-circle me-2"></i> Thank you! Your message has been sent successfully. I\'ll get back to you soon!';
+                        submitMessage.classList.remove('d-none');
+                        document.getElementById('contactForm').reset();
+                      } else {
+                        throw new Error(result.message);
+                      }
+                    } catch (error) {
+                      console.error('Error:', error);
+                      submitMessage.className = 'alert alert-danger mt-4';
+                      submitMessage.innerHTML = '<i class="bi bi-exclamation-triangle me-2"></i> Failed to send. Please email me directly at niravpanchal9980@gmail.com';
+                      submitMessage.classList.remove('d-none');
+                    } finally {
+                      submitBtn.disabled = false;
+                      submitBtn.innerHTML = originalBtnText;
+                      setTimeout(() => submitMessage.classList.add('d-none'), 5000);
+                    }
+                    
+                    return false;
+                  }
+                </script>
               </div>
             </div>
           </div>
@@ -532,5 +697,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Chatbot JavaScript -->
+    <script src="./js/chatbot.js" defer></script>
   </body>
 </html>
