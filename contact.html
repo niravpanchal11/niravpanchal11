@@ -13,6 +13,8 @@
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"></noscript>
     <link rel="preload" href="./css/style.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link href="./css/style.css" rel="stylesheet"></noscript>
+    <!-- Chatbot CSS -->
+    <link href="./css/chatbot.css" rel="stylesheet">
     <title>Contact Me | Nirav Panchal</title>
   </head>
   <body>
@@ -163,5 +165,91 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer crossorigin></script>
+    <!-- Chatbot JavaScript -->
+    <script src="./js/chatbot.js" defer></script>
+    
+    <!-- Contact Form Handler -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('Contact form script loaded');
+        
+        const contactForm = document.getElementById('contactForm');
+        const submitMessage = document.getElementById('submitMessage');
+        
+        if (!contactForm) {
+          console.error('Contact form not found!');
+          return;
+        }
+        
+        console.log('Contact form found, attaching event listener');
+        
+        contactForm.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          console.log('Form submitted!');
+          
+          // Get form data
+          const formData = {
+            name: document.getElementById('nameInput').value,
+            email: document.getElementById('emailInput').value,
+            subject: document.getElementById('subjectInput').value,
+            message: document.getElementById('messageInput').value
+          };
+          
+          console.log('Form data:', formData);
+          
+          // Disable submit button
+          const submitBtn = contactForm.querySelector('button[type="submit"]');
+          const originalBtnText = submitBtn.innerHTML;
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<i class="bi bi-hourglass-split me-2"></i> Sending...';
+          
+          try {
+            console.log('Sending request to http://localhost:8000/send-email');
+            
+            const response = await fetch('http://localhost:8000/send-email', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(formData)
+            });
+            
+            console.log('Response status:', response.status);
+            
+            const result = await response.json();
+            console.log('Response data:', result);
+            
+            if (result.success) {
+              // Success message
+              submitMessage.className = 'alert alert-success mt-4';
+              submitMessage.innerHTML = '<i class="bi bi-check-circle me-2"></i> Thank you! Your message has been sent successfully. I\'ll get back to you soon!';
+              submitMessage.classList.remove('d-none');
+              
+              // Reset form
+              contactForm.reset();
+            } else {
+              throw new Error(result.message || 'Failed to send email');
+            }
+          } catch (error) {
+            console.error('Error sending email:', error);
+            // Error message
+            submitMessage.className = 'alert alert-danger mt-4';
+            submitMessage.innerHTML = '<i class="bi bi-exclamation-triangle me-2"></i> Oops! Something went wrong. Please try again or contact me directly at niravpanchal9980@gmail.com';
+            submitMessage.classList.remove('d-none');
+          } finally {
+            // Re-enable submit button
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+              submitMessage.classList.add('d-none');
+            }, 5000);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
