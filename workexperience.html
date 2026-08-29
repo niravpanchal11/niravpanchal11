@@ -11,10 +11,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"></noscript>
-    <link rel="preload" href="./css/style.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link href="./css/style.css" rel="stylesheet"></noscript>
+    <!-- Site CSS -->
+    <link href="./css/style.css" rel="stylesheet">
     <!-- Chatbot CSS -->
     <link href="./css/chatbot.css" rel="stylesheet">
+    <!-- Theme Toggle CSS -->
+    <link href="./css/theme.css" rel="stylesheet">
 
     <title>Work Experience | Nirav Panchal</title>
   </head>
@@ -62,37 +64,92 @@
       <div class="container">
         <div class="text-center mb-5">
           <h1 class="display-4 fw-bold mb-3"><i class="bi bi-briefcase"></i> Work Experience</h1>
-          <p class="lead text-muted">My professional journey</p>
+          <p class="lead text-muted">My professional journey & accomplishments</p>
         </div>
 
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <!-- Experience - 1 -->
+          <div class="col-lg-10 mx-auto">
+            <!-- TCS Experience -->
             <div class="card border-0 shadow-lg mb-4 experience-card">
               <div class="card-body p-4">
-                <div class="d-flex justify-content-between align-items-start">
+                <div class="d-flex justify-content-between align-items-start mb-3">
                   <div>
                     <h3 class="card-title fw-bold mb-1">
-                      <i class="bi bi-building me-2 icon-accent"></i> Tata Consultancy Services (TCS)
+                      <i class="bi bi-building me-2 icon-accent"></i> Tata Consultancy Services
                     </h3>
-                    <p class="text-muted mb-3">Software Engineer</p>
+                    <p class="text-danger fw-bold mb-2" style="font-size: 1.1rem;">Senior AI/ML & Data Engineer</p>
+                    <p class="text-muted mb-0"><i class="bi bi-geo-alt me-2"></i>Gandhinagar, India</p>
                   </div>
-                  <span class="badge badge-accent fs-6">Current</span>
+                  <span class="badge badge-accent fs-6">May 2021 - Present</span>
                 </div>
-                <p class="text-muted mb-2"><i class="bi bi-calendar-event me-2"></i> 2021 - Present</p>
-                <p class="card-text" style="line-height: 1.8;">
-                  Working as a Software Engineer at TCS, contributing to the development and maintenance of enterprise-level applications. 
-                  Involved in full-stack development, system design, and optimization of software solutions for diverse client requirements.
-                </p>
-                <div class="mt-3">
-                  <strong>Key Responsibilities:</strong>
-                  <ul class="mt-2 mb-0">
-                    <li>Develop and maintain web applications using modern tech stacks</li>
-                    <li>Collaborate with cross-functional teams for project delivery</li>
-                    <li>Code review and quality assurance</li>
-                    <li>Performance optimization and bug fixes</li>
+
+                <!-- AI/ML Engineering Section -->
+                <div class="mb-4">
+                  <h5 class="fw-bold text-primary mb-3"><i class="bi bi-cpu me-2"></i>AI/ML Engineering</h5>
+                  <ul class="mb-0" style="line-height: 1.9;">
+                    <li>Implemented custom MCP servers using FastMCP to integrate enterprise platforms including Salesforce Marketing Cloud (SFMC) for exposing campaign, data-extension audience, Email/SMS content-block, and journey-related operations as standardized AI-callable tools</li>
+                    <li>Architected and deployed enterprise-scale Retrieval-Augmented Generation (RAG) solutions using LangChain, Pinecone, Enterprise-secured LLM Embeddings, FastAPI, and ReactJS, reducing internal knowledge search time by approximately 60%</li>
+                    <li>Optimized retrieval performance through advanced embedding model evaluation, chunking strategies, metadata filtering, and re-ranking techniques, indexing 10,000+ enterprise documents</li>
+                    <li>Integrated Large Language Models (LLMs) with enterprise ecosystems through APIs, MCP servers, vector databases, and custom tool frameworks</li>
+                    <li>Engineered scalable backend services using Python, FastAPI, asynchronous architectures, and RESTful APIs to support agent orchestration and real-time AI inference</li>
+                    <li>Designed and deployed production-grade AI applications with ReactJS & FastAPI, serving multiple business teams</li>
+                    <li>Containerized and deployed AI web solutions on Amazon EKS (Kubernetes); additionally engineered MLOps pipelines using AWS SageMaker Pipelines, Lambda, and Step Functions</li>
+                    <li>Collaborated with stakeholders to productionize enterprise AI solutions spanning Agentic AI, MCP, RAG, LLM integrations, and MLOps</li>
                   </ul>
                 </div>
+
+                <!-- Data Engineering Section -->
+                <div class="mb-4">
+                  <h5 class="fw-bold text-success mb-3"><i class="bi bi-database me-2"></i>Data Engineering</h5>
+                  <ul class="mb-0" style="line-height: 1.9;">
+                    <li>Working as Team Lead & Tech Lead for Data Engineering projects, driving sprint planning and architectural decisions for 8–10 engineers — while mentoring 5+ junior engineers, accelerating on-boarding by 40%</li>
+                    <li>Designed and optimized distributed PySpark ETL pipelines on AWS Glue, processing 1TB+ of data daily, achieving up to 40% reduction in execution time</li>
+                    <li>Enforced data quality using Great Expectations across 200+ pipeline stages — reducing bad data incidents by 85%</li>
+                    <li>Orchestrated complex multi-step ML and ETL workflows using Apache Airflow and AWS Step Functions across 30+ production pipelines</li>
+                    <li>Architected enterprise-scale SCD Type-4 Data Archival Project on AWS using Step Functions, AppFlow, S3, Airflow, and PL/SQL</li>
+                    <li>Implemented end-to-end data ingestion pipelines integrating Salesforce, REST APIs, RDS, Aurora, and Redshift</li>
+                    <li>Designed cloud-native data integration pipelines for Veeva Vault using AWS Lambda, DynamoDB, and VQL</li>
+                    <li>Engineered reusable PL/SQL dynamic stored procedures implementing SCD Type-1 and Type-2 for 100+ tables</li>
+                    <li>Provisioned Amazon Redshift cluster with WLM queue settings enabling high-throughput analytical workloads</li>
+                    <li>Designed operational dashboards on AWS QuickSight and Splunk, reducing time-to-insight by 70%</li>
+                  </ul>
+                </div>
+
+                <!-- Web & DevOps Section -->
+                <div class="mb-0">
+                  <h5 class="fw-bold text-info mb-3"><i class="bi bi-gear me-2"></i>Web & DevOps</h5>
+                  <ul class="mb-0" style="line-height: 1.9;">
+                    <li>Led DevOps project as Technical Lead, defining engineering standards and collaborating with stakeholders — cutting post-deployment incidents by 35%</li>
+                    <li>Orchestrated containerized microservices across Amazon EKS and ECS, deploying 50+ workloads with Helm and ArgoCD — reducing deployment errors by 45%</li>
+                    <li>Built end-to-end CI/CD pipelines using GitHub Actions and AWS CodePipeline — compressing release cycles from days to under 2 hours</li>
+                    <li>Modernized Infrastructure-as-Code migrating CloudFormation to AWS CDK and Terraform — achieving 3x faster provisioning</li>
+                    <li>Led FinOps cost optimization delivering $120K+ in annual cloud savings</li>
+                    <li>Built unified observability platform integrating Splunk with AWS services — reducing MTTR by 50%</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Softvan Internship -->
+            <div class="card border-0 shadow-lg mb-4 experience-card">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                  <div>
+                    <h3 class="card-title fw-bold mb-1">
+                      <i class="bi bi-building me-2 icon-accent"></i> Softvan Pvt. Ltd.
+                    </h3>
+                    <p class="text-danger fw-bold mb-2" style="font-size: 1.1rem;">Full Stack Developer Intern</p>
+                    <p class="text-muted mb-0"><i class="bi bi-geo-alt me-2"></i>Ahmedabad, India</p>
+                  </div>
+                  <span class="badge bg-secondary fs-6">April 2019 - March 2020</span>
+                </div>
+
+                <ul class="mb-0" style="line-height: 1.9;">
+                  <li>Designed and developed full-stack Enterprise Administration System (EAS) using J2EE, Spring MVC, Hibernate, MySQL, and Bootstrap for 200+ users</li>
+                  <li>Built Crop Disease Prediction web application using Flask and OpenCV with CNN achieving approximately 85% accuracy</li>
+                  <li>Performed exploratory data analysis on agricultural datasets using Pandas, NumPy, SciPy, Matplotlib, Seaborn, and Plotly</li>
+                  <li>Collaborated in Agile team of 4 developers, delivering bi-weekly releases with consistent on-time completion</li>
+                </ul>
               </div>
             </div>
 
@@ -103,16 +160,32 @@
                 
                 <div class="mb-4 pb-4 border-bottom">
                   <h3 class="fs-5 fw-bold mb-1">Bachelor of Engineering (B.E.) in Information Technology</h3>
-                  <p class="text-muted mb-2">L.D. College of Engineering (LDCE), Ahmedabad</p>
-                  <p class="text-muted"><i class="bi bi-calendar-event me-2"></i> 2017 - 2021</p>
-                  <p class="card-text">Graduated with strong fundamentals in computer science, algorithms, data structures, and software development. 
-                    Participated in various technical workshops and projects during my academic journey.</p>
+                  <p class="text-danger mb-2 fw-bold">L.D. College of Engineering (GTU), Ahmedabad</p>
+                  <p class="text-muted mb-2"><i class="bi bi-calendar-event me-2"></i> July 2017 - June 2021</p>
+                  <div class="mb-3">
+                    <span class="badge bg-success me-2">CPI: 8.0</span>
+                    <span class="badge bg-success">CGPA: 9.1</span>
+                  </div>
+                  <p class="card-text mb-0" style="line-height: 1.8;">
+                    Graduated with distinction, excelling in Data Structures, Algorithms, Database Management, Machine Learning, 
+                    and Software Engineering. Participated in multiple hackathons and technical competitions.
+                  </p>
+                </div>
+
+                <div class="mb-4 pb-4 border-bottom">
+                  <h3 class="fs-5 fw-bold mb-1">Class XI–XII (Science Stream)</h3>
+                  <p class="text-muted mb-2"><i class="bi bi-calendar-event me-2"></i> June 2015 - May 2017</p>
+                  <div class="mb-2">
+                    <span class="badge bg-success">91.33%</span>
+                  </div>
                 </div>
 
                 <div>
-                  <h3 class="fs-5 fw-bold mb-1">High School</h3>
-                  <p class="text-muted mb-2">Science Stream</p>
-                  <p class="text-muted"><i class="bi bi-calendar-event me-2"></i> Completed with distinction</p>
+                  <h3 class="fs-5 fw-bold mb-1">Class X</h3>
+                  <p class="text-muted mb-2"><i class="bi bi-calendar-event me-2"></i> June 2014 - March 2015</p>
+                  <div class="mb-0">
+                    <span class="badge bg-success">91%</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -147,6 +220,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer crossorigin></script>
+    <!-- Theme Toggle JavaScript -->
+    <script src="./js/theme-toggle.js" defer></script>
     <!-- Chatbot JavaScript -->
     <script src="./js/chatbot.js" defer></script>
   </body>
