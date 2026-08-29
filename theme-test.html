@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Test - Dark/Light Mode</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="./css/theme.css" rel="stylesheet">
+    
+    <style>
+        body {
+            padding: 50px 20px;
+            min-height: 100vh;
+        }
+        .test-card {
+            margin-bottom: 30px;
+        }
+        .color-box {
+            width: 100%;
+            height: 100px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold mb-3">🌓 Theme Test Page</h1>
+            <p class="lead">Click the theme toggle button in the bottom-right corner to test dark/light mode</p>
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle me-2"></i>
+                <strong>Current Theme:</strong> <span id="current-theme">Loading...</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Card Test -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-lg test-card">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="bi bi-card-checklist text-danger me-2"></i>Card Component</h3>
+                        <p class="card-text">This is a test card to verify theme colors are working correctly.</p>
+                        <button class="btn btn-danger">Primary Button</button>
+                        <button class="btn btn-outline-danger ms-2">Outline Button</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Test -->
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-lg test-card">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="bi bi-input-cursor text-danger me-2"></i>Form Elements</h3>
+                        <div class="mb-3">
+                            <label class="form-label">Text Input</label>
+                            <input type="text" class="form-control" placeholder="Type something...">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Textarea</label>
+                            <textarea class="form-control" rows="3" placeholder="Enter text..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color Variables Test -->
+            <div class="col-12 mb-4">
+                <div class="card shadow-lg test-card">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4"><i class="bi bi-palette text-danger me-2"></i>CSS Variables Test</h3>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <div class="color-box" style="background-color: var(--bg-primary); color: var(--text-primary); border: 2px solid var(--border-color);">
+                                    --bg-primary
+                                </div>
+                                <small class="text-muted">Primary Background</small>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="color-box" style="background-color: var(--bg-secondary); color: var(--text-primary); border: 2px solid var(--border-color);">
+                                    --bg-secondary
+                                </div>
+                                <small class="text-muted">Secondary Background</small>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="color-box" style="background-color: var(--card-bg); color: var(--text-primary); border: 2px solid var(--border-color);">
+                                    --card-bg
+                                </div>
+                                <small class="text-muted">Card Background</small>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="color-box" style="background-color: var(--primary-color); color: white;">
+                                    --primary-color
+                                </div>
+                                <small class="text-muted">Primary Color</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typography Test -->
+            <div class="col-12 mb-4">
+                <div class="card shadow-lg test-card">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4"><i class="bi bi-fonts text-danger me-2"></i>Typography</h3>
+                        <h1>Heading 1 - var(--text-primary)</h1>
+                        <h2>Heading 2 - var(--text-primary)</h2>
+                        <h3>Heading 3 - var(--text-primary)</h3>
+                        <p class="lead">Lead paragraph - var(--text-secondary)</p>
+                        <p>Regular paragraph text - var(--text-secondary)</p>
+                        <p class="text-muted">Muted text - var(--text-muted)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Status -->
+            <div class="col-12">
+                <div class="card shadow-lg test-card">
+                    <div class="card-body">
+                        <h3 class="card-title mb-4"><i class="bi bi-check-circle text-danger me-2"></i>Theme Status</h3>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <strong>HTML Attribute:</strong>
+                                <code id="html-theme">Checking...</code>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <strong>Body Class:</strong>
+                                <code id="body-class">Checking...</code>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <strong>LocalStorage:</strong>
+                                <code id="storage-theme">Checking...</code>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-3" onclick="checkThemeStatus()">
+                            <i class="bi bi-arrow-clockwise me-2"></i>Refresh Status
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="index.html" class="btn btn-danger btn-lg">
+                <i class="bi bi-house-door me-2"></i>Back to Home
+            </a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Theme Toggle JS -->
+    <script src="./js/theme-toggle.js"></script>
+    
+    <script>
+        function checkThemeStatus() {
+            const htmlTheme = document.documentElement.getAttribute('data-theme') || 'not set';
+            const bodyClass = document.body.classList.contains('dark-mode') ? 'dark-mode' : 
+                            document.body.classList.contains('light-mode') ? 'light-mode' : 'none';
+            const storageTheme = localStorage.getItem('theme') || 'not set';
+            
+            document.getElementById('html-theme').textContent = htmlTheme;
+            document.getElementById('body-class').textContent = bodyClass;
+            document.getElementById('storage-theme').textContent = storageTheme;
+            document.getElementById('current-theme').textContent = htmlTheme.toUpperCase();
+        }
+        
+        // Check status on load
+        setTimeout(checkThemeStatus, 500);
+        
+        // Update status when theme changes
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('#theme-toggle')) {
+                setTimeout(checkThemeStatus, 100);
+            }
+        });
+    </script>
+</body>
+</html>
